@@ -26,7 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("==>", "MProfileAcitivty destroyed.");
+        Log.d("==>", "ProfileAcitivty destroyed.");
     }
 
     @Override
@@ -53,6 +53,7 @@ public class ProfileActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Log.d("==>", "Sign out pressed.");
+                    finish();
                 }
             });
 
